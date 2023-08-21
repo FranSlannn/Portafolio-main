@@ -30,8 +30,7 @@
   <div class="nav-links">
     <a class="nav-link" href="#about" data-text="Sobre Mí">Sobre Mí</a>     
     <a class="nav-link" href="#projects" data-text="Proyectos">Proyectos</a>      
-    <a class="nav-link" href="#contact" data-text="Contacto">Contacto</a>      
-    <a class="nav-link" href="politica-de-cookies.html" data-text="Política de Cookies">Cookies</a>
+    <a class="nav-link" href="#contact" data-text="Contacto">Contacto</a>         
   </div>
 </div>
   
@@ -63,35 +62,63 @@
 <!-- Sección "Proyectos" -->
 <section id="projects" class="projects">
   <div class="containerProject">
-      <h2>Últimos Proyectos</h2>
-      <div class="row">
-          <!-- Proyecto 1 -->
+    <h2>Últimos Proyectos</h2>
+    <div id="myBtnContainer">
+      <button class="btn active" data-category="all">Mostrar todo</button>
+      <button class="btn" data-category="web">Webs</button>
+      <button class="btn" data-category="ilustracion">Ilustraciones</button>
+    </div>
+    <div class="row" id="projectList">
+          <!-- Sección Webs -->
           <div class="col-md-4">
-              <div class="project-item" onclick="zoomImage('imagenes/friki.png')">
+              <div class="project-item web" onclick="zoomImage('imagenes/friki.png')">
                   <img src="imagenes/friki.png" alt="Proyecto 1">
                   <h3>Proyecto 1</h3>
               </div>
           </div>
 
-          <!-- Proyecto 2 -->
+          <!-- Sección Webs -->
           <div class="col-md-4">
-              <div class="project-item" onclick="zoomImage('imagenes/insectos.png')">
+              <div class="project-item web" onclick="zoomImage('imagenes/insectos.png')">
                   <img src="imagenes/insectos.png" alt="Proyecto 2">
                   <h3>Proyecto 2</h3>
               </div>
           </div>
 
-          <!-- Proyecto 3 -->
+          <!-- Sección Webs -->
           <div class="col-md-4">
-              <div class="project-item" onclick="zoomImage('imagenes/sorrymom.jpg')">
+              <div class="project-item web" onclick="zoomImage('imagenes/sorrymom.jpg')">
                   <img src="imagenes/sorrymom.jpg" alt="Proyecto 3">
                   <h3>Proyecto 3</h3>
+              </div>
+          </div>
+
+          <!-- Sección Ilustraciones -->
+          <div class="col-md-4">
+              <div class="project-item ilustracion" onclick="zoomImage('imagenes/carabn.jpg')">
+                  <img src="imagenes/carabn.jpg" alt="Ilustración 1">
+                  <h3>Ilustración 1</h3>
+              </div>
+          </div>
+
+          <!-- Sección Ilustraciones -->
+          <div class="col-md-4">
+              <div class="project-item ilustracion" onclick="zoomImage('imagenes/ojo cocodrilo.jpg')">
+                  <img src="imagenes/ojo cocodrilo.jpg" alt="Ilustración 2">
+                  <h3>Ilustración 2</h3>
+              </div>
+          </div>
+
+          <!-- Sección Ilustraciones -->
+          <div class="col-md-4">
+              <div class="project-item ilustracion" onclick="zoomImage('imagenes/face2.jpg')">
+                  <img src="imagenes/face2.jpg" alt="Ilustración 3">
+                  <h3>Ilustración 3</h3>
               </div>
           </div>
       </div>
   </div>
 </section>
-
 
 
   <!-- Sección "Contacto" -->

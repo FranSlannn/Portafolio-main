@@ -2,6 +2,8 @@
 body, h1, h2, h3, p, ul, li {
   margin: 0;
   padding: 0; 
+  text-align: center;
+  list-style-position: inside; /* Centra los puntos horizontalmente */
 }
 
 /* Estilos generales y reseteo de margenes y paddings */
@@ -15,7 +17,7 @@ h1, h2 {
 body {
   font-family: "Poppins", sans-serif;
   background-color: #2a2a2a;
-  color: #fff;  
+  color: #e4ede8;  
   font-size: 1.1rem;
   overflow-x: hidden;
   
@@ -36,13 +38,13 @@ body {
 }
 
 .nav > .nav-header {
-  display: inline;
-}
+  display: inline-block;
+  }
 
 .nav > .nav-header > .nav-title {
   display: inline-block;
   font-size: 22px;
-  color: #fff;
+  color: #e4ede8;
   padding: 10px 10px 10px 10px;
 }
 
@@ -60,7 +62,7 @@ body {
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
-  color: #efefef;
+  color: #e4ede8;
 }
 
 .nav > .nav-links > a:hover {
@@ -91,7 +93,7 @@ body {
     display: block;
     width: 25px;
     height: 10px;
-    border-top: 2px solid #eee;
+    border-top: 2px solid #e4ede8;
   }
   .nav > .nav-links {
     position: absolute;
@@ -132,7 +134,7 @@ body {
 }
 
 .text-white {
-  color: white; /* Color de texto blanco */
+  color: #e4ede8; /* Color de texto blanco */
 }
 
 .text-center {
@@ -208,27 +210,17 @@ body {
   margin-bottom: 20px;
 }
 
-.about ul {
+body ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 18px;
-  line-height: 1.6;
+  padding-left: 0;
+  margin: 20px 0;
 }
 
-.about ul li {
-  position: relative;
-  padding-left: 20px;
-  margin-bottom: 10px;
+body ul li {
+  margin-bottom: 8px;
+  line-height: 1.4;
 }
 
-.about ul li:before {
-  content: '\2022';
-  position: absolute;
-  left: 0;
-  top: 2px;
-  color: #27AE60;
-}
 
 
 /* ---- Projects Section ---- */
@@ -263,7 +255,7 @@ h2 {
 }
 
 .project-item {
-  background-color: #fff;
+  background-color: #e4ede8;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
@@ -306,7 +298,7 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 24px;
-  color: #fff;
+  color: #e4ede8;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 50%;
   padding: 10px;
@@ -381,7 +373,7 @@ h2 {
   padding: 15px 30px;
   margin-top: 20px;
   background-color: #27AE60;
-  color: white;
+  color: #e4ede8;
   text-decoration: none;
   border-radius: 5px;
   border: none;
@@ -394,7 +386,7 @@ h2 {
 }
 
 .download-button:hover {
-  background-color: #218B49;
+  background-color: #27AE60;
 }
 
 
@@ -408,6 +400,35 @@ h2 {
 }
 
 /* ---- Buttons ---- */
+
+/* Estilos para el contenedor de botones */
+#myBtnContainer {
+  text-align: center; /* Centrar los botones horizontalmente */
+  margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilos para los botones de filtrado */
+#myBtnContainer .btn {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #343A40;
+  color: #e4ede8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 30px; /* Espacio inferior entre botones */
+}
+
+#myBtnContainer .btn:hover {
+  background-color: #27AE60;
+}
+
+/* Estilo para el botón activo */
+#myBtnContainer .btn.active {
+  background-color: #27AE60;
+}
+
 
 /* Estilos para botones primarios */
 .btn-primary {
@@ -429,7 +450,7 @@ h2 {
   left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
+  color: #e4ede8;
   padding: 10px;
   text-align: center;
   display: none;
