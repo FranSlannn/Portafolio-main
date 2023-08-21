@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css"> <!-- Vincula tu hoja de estilos CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Tu Portafolio</title>
+</head>
+<body>
+
+<!-- Menú de navegación mejorado -->
+
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      PORTAFOLIO
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <a class="nav-link" href="#about" data-text="Sobre Mí">Sobre Mí</a>     
+    <a class="nav-link" href="#projects" data-text="Proyectos">Proyectos</a>      
+    <a class="nav-link" href="#contact" data-text="Contacto">Contacto</a>      
+    <a class="nav-link" href="politica-de-cookies.html" data-text="Política de Cookies">Cookies</a>
+  </div>
+</div>
+  
+  <!-- Sección de fondo con imagen -->
+  <section class="background-section">
+  </section>
+
+ <!-- Sección "Sobre Mí" -->
+<section id="about" class="about">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+              <h2 class="section-title">Sobre Mí</h2>
+              <p>Técnico en Administración de Sistemas Informáticos hola y Redes, con un perfil autodidacta y curioso por las nuevas tecnologías.</p>
+              <p>Experiencia en:</p>
+              <ul>
+                  <li>Administración de sistemas y redes</li>
+                  <li>Mantenimiento y control de sistemas</li>
+                  <li>Desarrollo Web en PHP - HTML - CSS - WORDPRESS</li>
+                  <li>Virtualización VMware</li>
+                  <li>Monitorización</li>
+              </ul>
+          </div>
+        </div>
+  </div>
+</section>
+
+
+<!-- Sección "Proyectos" -->
+<section id="projects" class="projects">
+  <div class="containerProject">
+      <h2>Últimos Proyectos</h2>
+      <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-md-4">
+              <div class="project-item">
+                  <img src="imagenes/friki.png" alt="Proyecto 1">
+                  <h3>Proyecto 1</h3>
+                 
+              </div>
+          </div>
+
+          <!-- Proyecto 2 -->
+          <div class="col-md-4">
+              <div class="project-item">
+                  <img src="imagenes/insectos.png" alt="Proyecto 2">
+                  <h3>Proyecto 2</h3>
+                 
+              </div>
+          </div>
+
+          <!-- Proyecto 3 -->
+          <div class="col-md-4">
+              <div class="project-item">
+                  <img src="imagenes/portafolio.png" alt="Proyecto 3">
+                  <h3>Proyecto 3</h3>
+                 
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+  <!-- Sección "Contacto" -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title text-center">Contacto</h2>
+        <ul>
+          <li><i class="fas fa-phone"></i> T: 628.52.74.98</li>
+          <li><i class="fas fa-envelope"></i> E: slannn@hotmail.com</li>
+          <li><i class="fab fa-linkedin"></i> LinkedIn: <a class="custom-link" href="https://www.linkedin.com/in/franort" target="_blank">www.linkedin.com/in/franort</a>
+          <li><i class="fas fa-map-marker-alt"></i> Ubicación: Madrid, España</li>          
+          <li><i class="fas fa-graduation-cap"></i> Educación: Camino de la Miranda, Palencia</li>        
+          <li><i class="fas fa-language"></i> Idiomas: Inglés, Español</li>
+    </ul>      
+      <a class="download-button" href="imagenes/Francisco_2023.pdf" download>
+        <i class="fas fa-download"></i> Descargar CV
+      </a>
+    </div>    
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer-container">
+    <div class="container">
+      <p>&copy; 2023 Fran Ortega González. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Banner de cookies -->
+  <div class="cookie-banner" id="cookie-consent">
+    <p>Este sitio web utiliza cookies para ofrecerte la mejor experiencia. Al continuar utilizando el sitio, aceptas nuestro uso de cookies.</p>
+    <button id="accept-cookie" class="btn btn-primary">Aceptar</button>
+    <a href="politica-de-cookies.html" class="btn btn-dark more-info">Más Información</a>
+  </div>
+
+  <!-- Script personalizado -->
+  <script>
+    // JavaScript personalizado aquí
+  </script>
+
+  <!-- Scripts de Bootstrap y otros -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
