@@ -1,7 +1,5 @@
 # Portafolio
 
-![Portafolio Screenshot](screenshot.png)
-
 ¡Hola! Soy Fran, un apasionado/a de la programación y el diseño web. Este es mi portafolio personal, donde muestro algunos de los proyectos que he estado creando utilizando HTML y CSS.
 
 ## Acerca de Mí
