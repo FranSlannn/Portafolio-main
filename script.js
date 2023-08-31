@@ -1,3 +1,14 @@
+
+// nav
+$('.navTrigger').click(function () {
+  $(this).toggleClass('active');
+  console.log("Clicked menu");
+  $("#mainListDiv").toggleClass("show_list");
+  $("#mainListDiv").fadeIn();
+
+});
+
+
 // zoomout
 function zoomImage(imageSrc) {
     const zoomedProject = document.createElement('div');

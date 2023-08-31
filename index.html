@@ -6,63 +6,111 @@
   <link rel="stylesheet" href="styles.css"> <!-- Vincula tu hoja de estilos CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="script.js" defer></script>
-  <title>Tu Portafolio</title>
+  <title>Portafolio</title>
 </head>
 <body>
 
 <!-- Menú de navegación mejorado -->
 
-<div class="nav">
-  <input type="checkbox" id="nav-check">
-  <div class="nav-header">
-    <div class="nav-title">
-      PORTAFOLIO
+<section class="nav-section">
+  <nav class="nav">
+    <div class="container">
+      <div class="logo">
+        <a href="#">FRAN ORTEGA</a>
+      </div>
+      <div id="mainListDiv" class="main_list">
+        <ul class="navlinks">
+          <li><a href="#about-section" data-text="about-section">Sobre Mí</a></li>
+          <li><a href="#skill" data-text="skill">Habilidades</a></li>
+          <li><a href="#projects" data-text="Proyectos">Proyectos</a></li>
+          <li><a href="#contact" data-text="Contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <span class="navTrigger">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
     </div>
-  </div>
-  <div class="nav-btn">
-    <label for="nav-check">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-  </div>
-  
-  <div class="nav-links">
-    <a class="nav-link" href="#about" data-text="Sobre Mí">Sobre Mí</a>     
-    <a class="nav-link" href="#projects" data-text="Proyectos">Proyectos</a>      
-    <a class="nav-link" href="#contact" data-text="Contacto">Contacto</a>         
-  </div>
-</div>
-  
-  <!-- Sección de fondo con imagen -->
-  <section class="background-section">
-  </section>
+  </nav>
+</section>
 
- <!-- Sección "Sobre Mí" -->
-<section id="about" class="about">
+   
+  <!-- Sección home --------------------------------------->
+
+  <section id="home-section" class="hero">
+    <div class="container">
+      <div class="left-section">
+          <span class="subheading">DESARROLLADOR WEB</span>
+          <h1 class="mb-4 mt-3">Fran Ortega</h1>
+          <h2 class="mb-4">Front-End <br>
+            Diseño de páginas web.</h2>
+      </div>
+      <div class="right-section">
+          <img src="imagenes/PERFIL.jpg" alt="Mi Foto de Perfil">
+      </div>
+  </div>
+  </section>
+  
+  
+
+<!------ABOUT US SECTION---------------------------->
+
+<section id="about-section" class="about">
   <div class="container">
-      <div class="row">
-          <div class="col-md-6">
-              <h2 class="section-title">Sobre Mí</h2>
-              <p>Técnico en Administración de Sistemas Informáticos hola y Redes, con un perfil autodidacta y curioso por las nuevas tecnologías.</p>
-              <p>Experiencia en:</p>
-              <ul>
-                  <li>Administración de sistemas y redes</li>
-                  <li>Mantenimiento y control de sistemas</li>
-                  <li>Desarrollo Web en PHP - HTML - CSS - WORDPRESS</li>
-                  <li>Virtualización VMware</li>
-                  <li>Monitorización</li>
-              </ul>
-          </div>
-        </div>
+    <div class="right-section">
+      <img src="imagenes/lenguaje.jpg" alt="Mi Foto de Perfil">
+    </div>
+    <div class="left-section">
+         
+      <p class="mb-4">
+        ¡Hola! Soy Fran, un apasionado administrador de sistemas que siempre está buscando aprender y crecer en el mundo tecnológico. Mi experiencia en gestionar sistemas y redes me ha brindado una base sólida en la infraestructura tecnológica.
+      </p><br>
+      <p class="mb-4">
+        Además, estoy inmerso en el emocionante viaje de aprender desarrollo web y WordPress. Explorar el lado creativo de la tecnología me ha llevado a descubrir cómo las líneas de código pueden convertirse en experiencias digitales cautivadoras.
+      </p><br>
+      <p>
+        Siempre comprometido con la mejora continua, me encanta enfrentar nuevos desafíos y descubrir soluciones innovadoras.
+      </p>
+    </div>
   </div>
 </section>
 
 
+<!-- skills ----------------------------------------->
+<section id="skill" class="skill">
+<div class="skill">
+  <h1 class="heading">Habilidades</h1>
+  <div class="skills-container">
+      <div class="skill-card">
+          <img src="imagenes/html.png" class="skill-img" alt="">
+          <div class="skill-level">98%</div>
+          <h1 class="skill-name">HTML</h1>
+          <p class="skill-info">HTML es como el esqueleto de una página web. Lo uso para estructurar y organizar
+             el contenido, desde encabezados hasta imágenes y enlaces. Es la base sobre la que construyo sitios web.</p>
+      </div>
+      <div class="skill-card">
+        <img src="imagenes/css.png" class="skill-img" alt="">
+        <div class="skill-level">78%</div>
+        <h1 class="skill-name">CSS</h1>
+        <p class="skill-info">Con CSS, añado estilo y belleza a mis páginas. Puedo dar color, tamaño y espaciado a los elementos,
+           asegurando que todo luzca atractivo y coherente. Es como la capa de pintura y decoración.</p>
+      </div>
+      <div class="skill-card">
+        <img src="imagenes/js.png" class="skill-img" alt="">
+        <div class="skill-level">58%</div>
+        <h1 class="skill-name">JS</h1>
+        <p class="skill-info">JavaScript le da vida a mis páginas web. Utilizo JavaScript para crear efectos interactivos, validar formularios y
+           cargar contenido dinámico sin necesidad de recargar la página.</p>
+      </div>
+  </div>
+</div>
+</section>
+
 <!-- Sección "Proyectos" -->
 <section id="projects" class="projects">
   <div class="containerProject">
-    <h2>Últimos Proyectos</h2>
+    <h2>Proyectos</h2>
     <div id="myBtnContainer">
       <button class="btn active" data-category="all">Mostrar todo</button>
       <button class="btn" data-category="web">Webs</button>
@@ -70,7 +118,7 @@
     </div>
     <div class="row" id="projectList">
           <!-- Sección Webs -->
-          <div class="col-md-4">
+          <div class="col custom-column mt-4">
               <div class="project-item web" onclick="zoomImage('imagenes/friki.png')">
                   <img src="imagenes/friki.png" alt="Proyecto 1">
                   <h3>Proyecto 1</h3>
@@ -78,7 +126,7 @@
           </div>
 
           <!-- Sección Webs -->
-          <div class="col-md-4">
+          <div class="col custom-column mt-4">
               <div class="project-item web" onclick="zoomImage('imagenes/insectos.png')">
                   <img src="imagenes/insectos.png" alt="Proyecto 2">
                   <h3>Proyecto 2</h3>
@@ -86,7 +134,7 @@
           </div>
 
           <!-- Sección Webs -->
-          <div class="col-md-4">
+          <div class="col custom-column mt-4">
               <div class="project-item web" onclick="zoomImage('imagenes/sorrymom.jpg')">
                   <img src="imagenes/sorrymom.jpg" alt="Proyecto 3">
                   <h3>Proyecto 3</h3>
@@ -94,7 +142,7 @@
           </div>
 
           <!-- Sección Ilustraciones -->
-          <div class="col-md-4">
+          <div class="col custom-column mt-4">
               <div class="project-item ilustracion" onclick="zoomImage('imagenes/carabn.jpg')">
                   <img src="imagenes/carabn.jpg" alt="Ilustración 1">
                   <h3>Ilustración 1</h3>
@@ -102,7 +150,7 @@
           </div>
 
           <!-- Sección Ilustraciones -->
-          <div class="col-md-4">
+          <div class="col custom-column mt-4">
               <div class="project-item ilustracion" onclick="zoomImage('imagenes/ojo cocodrilo.jpg')">
                   <img src="imagenes/ojo cocodrilo.jpg" alt="Ilustración 2">
                   <h3>Ilustración 2</h3>
@@ -110,7 +158,7 @@
           </div>
 
           <!-- Sección Ilustraciones -->
-          <div class="col-md-4">
+          <div class="col custom-column mt-4">
               <div class="project-item ilustracion" onclick="zoomImage('imagenes/face2.jpg')">
                   <img src="imagenes/face2.jpg" alt="Ilustración 3">
                   <h3>Ilustración 3</h3>
@@ -129,7 +177,6 @@
           <li><i class="fas fa-envelope"></i> E: slannn@hotmail.com</li>
           <li><i class="fab fa-linkedin"></i> LinkedIn: <a class="custom-link" href="https://www.linkedin.com/in/franort" target="_blank">www.linkedin.com/in/franort</a>
           <li><i class="fas fa-map-marker-alt"></i> Ubicación: Madrid, España</li>          
-          <li><i class="fas fa-graduation-cap"></i> Educación: Camino de la Miranda, Palencia</li>        
           <li><i class="fas fa-language"></i> Idiomas: Inglés, Español</li>
     </ul>      
       <a class="download-button" href="imagenes/Francisco_2023.pdf" download>
@@ -152,14 +199,14 @@
     <a href="politica-de-cookies.html" class="btn btn-dark more-info">Más Información</a>
   </div>
 
-  <!-- Script personalizado -->
-  <script>
-    // JavaScript personalizado aquí
-  </script>
 
   <!-- Scripts de Bootstrap y otros -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Jquery needed -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ 
+
 </body>
 </html>
