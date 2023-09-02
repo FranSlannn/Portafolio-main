@@ -1,48 +1,36 @@
 /* Estilos generales y reseteo de margenes y paddings */
 body, h1, h2, h3, p, ul, li {
   margin: 0;
-  padding: 0; 
+  padding: 0;
   text-align: center;
-  list-style-position: inside; /* Centra los puntos horizontalmente */
+  list-style-position: inside;
 }
-
-/* Estilos generales y reseteo de margenes y paddings */
-h1, h2 {
-  margin-top: 1rem;
-  font-size: 2rem;
-  
-  }
 
 /* Estilos generales para el cuerpo del documento */
 body {
   font-family: "Poppins", sans-serif;
   background-color: #2a2a2a;
-  color: #e4ede8;  
+  color: #e4ede8;
   font-size: 1.1rem;
   overflow-x: hidden;
-  }
+}
 
-/*redes sociales*/
-
- /* Estilo para el contenedor de los iconos */
+/* Redes sociales */
 .social-icons {
-    display: inline-block; /* Para que los iconos estén en línea horizontal */
+  display: inline-block;
 }
 
-/* Estilo para cada enlace de icono */
 .social-icons a {
-    margin-right: 10px; /* Espacio entre los iconos */
-    font-size: 32px; /* Tamaño de fuente del icono (el doble del tamaño predeterminado) */
-    color: #333; /* Color predeterminado de los iconos (puedes cambiarlo según tu preferencia) */
-    text-decoration: none; /* Quitar subrayado en los enlaces */
-    transition: color 0.3s; /* Transición suave del color al pasar el cursor */
+  margin-right: 10px;
+  font-size: 42px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-/* Estilo para cambiar el color al pasar el cursor sobre los iconos */
 .social-icons a:hover {
-    color:#27AE60 /* Utiliza el color original del icono al pasar el cursor */
+  color: #27AE60;
 }
-
 
 /* Estilos para el menú de navegación mejorado */
 
@@ -55,6 +43,8 @@ body {
   background-color: #343A40;
   z-index: 1000;
 }
+
+
 
 .nav div.logo {
   float: left;
@@ -77,7 +67,7 @@ body {
   width: auto;
   height: auto;
   float: right;
-}
+ }
 
 .nav div.main_list ul {
   width: 100%;
@@ -86,6 +76,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  
 }
 
 .nav div.main_list ul li {
@@ -93,14 +84,14 @@ body {
   height: 65px;
   padding: 0;
   padding-right: 3rem;
-}
+  }
 
 .nav div.main_list ul li a {
   text-decoration: none;
   color: #fff;
   line-height: 65px;
   font-size: 1.4rem;
-}
+  }
 
 .nav div.main_list ul li a:hover {
   color: #00E676;
@@ -383,72 +374,70 @@ font-size: 20px;
 }
 }
 
-/* ---- Home Section ---- */
 
+/* Home Section */
 #home-section.hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 80px;
-  background-color: #F5F5F5;
+  background: linear-gradient(146deg, rgba(245, 245, 245, 1) 80%, rgba(39, 174, 96, 1) 100%);
   color: #2A2A2A;
 }
 
 #home-section .container {
   display: flex;
-  justify-content: center; /* Centrar horizontalmente */
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
 
 #home-section .left-section,
 #home-section .right-section {
-    flex: 1; /* Ambas partes ocupan el mismo espacio */
-    padding: 20px; /* Margen de separación más pequeño */
-    text-align: center; /* Centrar el texto en las dos partes */
-    margin: 5px; /* Margen entre las secciones */
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  margin: 5px;
 }
 
 #home-section .left-section .subheading {
-  font-size: 38px; /* Tamaño del subtítulo */
+  font-size: 38px;
   font-weight: bold;
   color: #2A2A2A;
   background-color: #9bddb7;
 }
 
 #home-section .left-section h1 {
-  font-size: 90px; /* Tamaño del título */
+  font-size: 90px;
   margin-top: 20px;
   color: #27AE60;
 }
 
 #home-section .left-section h2 {
-  font-size: 38px; /* Tamaño del subtitulo */
+  font-size: 38px;
   margin-top: 15px;
   color: #2A2A2A;
-  
 }
 
 #home-section .right-section img {
-  max-width: 45%; /* Reduciendo la imagen al 35% */
+  max-width: 45%;
   height: auto;
   transform: rotate(5deg);
 }
 
 @media (max-width: 768px) {
   #home-section.hero {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   #home-section .right-section {
-      display: none;
+    display: none;
   }
 }
 
-/* ---- About Section ---- */
-
+/* About Section */
 #about-section.about {
-  background-color: #343A40; /* Cambia el color de fondo a rojo (#ff0000), puedes usar cualquier otro color en formato hexadecimal o nombrado */
+  background-color: #343A40;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -472,10 +461,8 @@ font-size: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px; /* Agrega espacio vertical entre el título y las secciones */
-  
+  padding: 20px;
 }
-
 
 #about-section .left-section,
 #about-section .right-section {
@@ -486,7 +473,7 @@ font-size: 20px;
 }
 
 #about-section .right-section img {
-  max-width: 55%;
+  max-width: 65%;
   height: auto;
   transform: rotate(5deg);
 }
@@ -502,17 +489,13 @@ font-size: 20px;
   }
 }
 
-
-/* ---- Skill Section ---- */
-
-/* skills */
-
-.skill{
+/* Skill Section */
+.skill {
   position: relative;
   margin: 100px 0;
 }
 
-.heading{
+.heading {
   text-align: center;
   font-size: 60px;
   color: #27AE60;
@@ -521,7 +504,7 @@ font-size: 20px;
   margin-bottom: 100px;
 }
 
-.skills-container{
+.skills-container {
   width: 95%;
   margin: auto;
   display: grid;
@@ -530,17 +513,17 @@ font-size: 20px;
   color: #fff;
 }
 
-.skill-card{
+.skill-card {
   position: relative;
 }
 
-.skill-img{
+.skill-img {
   display: block;
   margin: auto;
   height: 200px;
 }
 
-.skill-name{
+.skill-name {
   font-size: 30px;
   font-weight: 300;
   text-align: center;
@@ -548,14 +531,14 @@ font-size: 20px;
   margin: 30px 0 20px;
 }
 
-.skill-info{
+.skill-info {
   text-align: center;
   opacity: 0.5;
   font-size: 18px;
   line-height: 30px;
 }
 
-.skill-level{
+.skill-level {
   position: absolute;
   top: 80px;
   right: 0;
@@ -569,31 +552,31 @@ font-size: 20px;
   border: 10px solid;
 }
 
-.skill-card:nth-child(1) .skill-level{
+.skill-card:nth-child(1) .skill-level {
   background: #ff4f4f28;
   border-color: #ff4f4f;
   color: #ff4f4f;
 }
 
-.skill-card:nth-child(2) .skill-level{
+.skill-card:nth-child(2) .skill-level {
   background: #4fa0ff28;
   border-color: #4fa0ff;
   color: #4fa0ff;
 }
 
-.skill-card:nth-child(3) .skill-level{
+.skill-card:nth-child(3) .skill-level {
   background: #ffed4f28;
   border-color: #ffed4f;
   color: #ffed4f;
 }
 
-.skill-card:nth-child(4) .skill-level{
+.skill-card:nth-child(4) .skill-level {
   background: #52ff4f28;
   border-color: #52ff4f;
   color: #52ff4f;
 }
 
-.skill-card:nth-child(5) .skill-level{
+.skill-card:nth-child(5) .skill-level {
   background: #4fdfff28;
   border-color: #4fdfff;
   color: #4fdfff;
@@ -607,11 +590,9 @@ font-size: 20px;
   }
 }
 
-
-/* ---- Projects Section ---- */
-
+/* Projects Section */
 .projects {
-  background-color: #f5f5f5;
+  background: linear-gradient(146deg, rgba(245, 245, 245, 1) 80%, rgba(39, 174, 96, 1) 100%);
   padding: 80px 0;
   text-align: center;
 }
@@ -620,7 +601,6 @@ font-size: 20px;
   max-width: 1100px;
   margin: 0 auto;
 }
-
 
 h2 {
   font-size: 60px;
@@ -632,18 +612,18 @@ h2 {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px; /* Espacio entre los proyectos */
+  margin: -15px;
 }
 
 /* Estilos personalizados */
 .custom-column {
-  margin-bottom: 20px; /* Espacio entre las columnas */
+  margin-bottom: 20px;
 }
 
 /* Estilos para pantallas grandes */
 @media (min-width: 992px) {
   .custom-column {
-      width: 33.33%; /* 3 columnas en una fila */
+    width: 33.33%;
   }
 }
 
@@ -654,7 +634,7 @@ h2 {
   overflow: hidden;
   position: relative;
   transition: transform 0.3s, filter 0.3s;
-  cursor: pointer; /* Añade el cursor de tipo puntero al contenedor */
+  cursor: pointer;
 }
 
 .project-item:hover {
@@ -663,11 +643,11 @@ h2 {
 }
 
 .project-item img {
-  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-  height: 400px; /* Establece una altura fija para las imágenes */
-  object-fit: cover; /* Ajusta la imagen para llenar el contenedor sin deformarla */
-  display: block;  
-  transition: transform 0.3s, filter 0.3s, opacity 0.3s; /* Agrega transición de opacidad */
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s, filter 0.3s, opacity 0.3s;
 }
 
 .project-item:hover img {
@@ -679,12 +659,11 @@ h2 {
 }
 
 .project-info h3 {
-  font-size: 20px; /* Ajusta el tamaño de fuente para los títulos */
-  margin: 10px 0; /* Ajusta el margen vertical de los títulos */
+  font-size: 20px;
+  margin: 10px 0;
 }
 
-/* zoom */
-
+/* Zoom Icon */
 .project-item .zoom-icon {
   position: absolute;
   top: 50%;
@@ -703,6 +682,7 @@ h2 {
   display: block;
 }
 
+/* Zoomed Project */
 .zoomed-project {
   position: fixed;
   top: 0;
@@ -714,34 +694,30 @@ h2 {
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  opacity: 0; /* Establece la opacidad inicial */
-  transition: opacity 0.2s; /* Agrega transición de opacidad */
+  opacity: 0;
+  transition: opacity 0.2s;
 }
 
 .zoomed-project img {
   max-width: 80%;
   max-height: 80%;
   object-fit: contain;
-  transform: scale(0.5); /* Establece la escala inicial */
-  transition: transform 0.2s; /* Agrega transición de transformación */
+  transform: scale(0.5);
+  transition: transform 0.2s;
 }
 
-
-/* ---- Contact Section ---- */
-
-/* Contact */
+/* Contact Section */
 #contact {
   padding: 80px 0;
   background-color: #343A40;
 }
 
-#contact h2{
+#contact h2 {
   font-size: 60px;
   color: #27AE60;
   text-transform: capitalize;
   font-weight: 300;
 }
-
 
 .social-icons-contact {
   display: flex;
@@ -752,29 +728,32 @@ h2 {
 }
 
 .social-icons-contact a {
-  color:#fff; /* Cambia el color*/
-  font-size: 44px; /* Cambia el tamaño */
+  color: #fff;
+  font-size: 44px;
   text-decoration: none;
-  margin-right: 20px; /* Aumenta la separación entre los íconos */
+  margin-right: 20px;
 }
 
 .social-icons-contact a:hover {
-  color: #27AE60; /* Cambia el color cuando el cursor pasa por encima */
+  color: #27AE60;
+}
+
+.contact-item p {
+  margin-top: 5px;
+  font-size: 14px;
 }
 
 .download-button-container {
-  
   justify-content: center;
   align-items: center;
   margin-top: 30px;
 }
 
 .download-button {
- 
   align-items: center;
   text-decoration: none;
-  background-color: #007bff; /* Cambia el color del botón a tu preferencia */
-  color: #fff; /* Cambia el color del texto del botón a tu preferencia */
+  background-color: #27AE60;
+  color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 18px;
@@ -785,56 +764,22 @@ h2 {
 }
 
 .download-button:hover {
-  background-color: #0056b3; /* Cambia el color cuando el cursor pasa por encima */
+  background-color: #0056b3;
 }
 
-
-/* Estilos para el botón de descarga */
-.download-button {
-
-  bottom: 20px; /* Espaciado inferior para el botón de descarga */
-  left: 50%; /* Centra horizontalmente el botón */
-  transform: translateX(-50%); /* Centra horizontalmente el botón */
-  padding: 15px 30px;
-  background-color: #27AE60;
-  color: #e4ede8;
-  text-decoration: none;
-  border-radius: 5px;
-  border: none;
-  font-size: 18px;
-  transition: background-color 0.3s ease;
-}
-
-
-
-.download-button i {
-  margin-right: 10px;
-}
-
-.download-button:hover {
-  background-color: #27AE60;
-}
-
-
-
-/* ---- Footer ---- */
-
-/* Estilos para el pie de página */
+/* Footer */
 .footer-container {
   padding: 10px 0;
   text-align: center;
   background-color: #2A2A2A;
 }
 
-/* ---- Buttons ---- */
-
-/* Estilos para el contenedor de botones */
+/* Button Styles */
 #myBtnContainer {
-  text-align: center; /* Centrar los botones horizontalmente */
-  margin-top: 20px; /* Espacio superior */
+  text-align: center;
+  margin-top: 20px;
 }
 
-/* Estilos para los botones de filtrado */
 #myBtnContainer .btn {
   padding: 10px 20px;
   margin: 5px;
@@ -844,20 +789,18 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-bottom: 30px; /* Espacio inferior entre botones */
+  margin-bottom: 30px;
 }
 
 #myBtnContainer .btn:hover {
   background-color: #27AE60;
 }
 
-/* Estilo para el botón activo */
 #myBtnContainer .btn.active {
   background-color: #27AE60;
 }
 
-
-/* Estilos para botones primarios */
+/* Primary Button Styles */
 .btn-primary {
   background-color: #3498db;
   border-color: #3498db;
@@ -868,9 +811,7 @@ h2 {
   border-color: #2185d0;
 }
 
-/* ---- Cookie Banner ---- */
-
-/* Estilos para el banner de cookies */
+/* Cookie Banner */
 .cookie-banner {
   position: fixed;
   bottom: 0;
@@ -892,13 +833,12 @@ h2 {
   margin-top: 10px;
 }
 
-/* ---- Links ---- */
-
+/* Custom Link Styles */
 .custom-link {
   color: #27AE60;
-  text-decoration: none; /* Para eliminar el subrayado predeterminado en los enlaces */
+  text-decoration: none;
 }
 
 .custom-link:hover {
-  text-decoration: underline; /* Subrayado al pasar el cursor sobre el enlace */
+  text-decoration: underline;
 }

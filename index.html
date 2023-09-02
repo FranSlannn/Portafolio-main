@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css"> <!-- Vincula tu hoja de estilos CSS -->
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="script.js" defer></script>
   <title>Portafolio</title>
@@ -11,7 +11,6 @@
 <body>
 
 <!-- Menú de navegación mejorado -->
-
 <section class="nav-section">
   <nav class="nav">
     <div class="container">
@@ -35,37 +34,33 @@
   </nav>
 </section>
 
-   
-  <!-- Sección home --------------------------------------->
-
-  <section id="home-section" class="hero">
-    <div class="container">
-      <div class="left-section">
-          <span class="subheading">DESARROLLADOR WEB</span>
-          <h1 class="mb-4 mt-3">Fran Ortega</h1>
-          <h2 class="mb-4">Front-End <br>
-            Diseño de páginas web.</h2><br>
-            <div class="social-icons">
-              <a href="https://www.linkedin.com/in/franort" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a href="https://github.com/FranSlannn" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="https://www.instagram.com/fran.o.tech" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="mailto:slannn@hotmail.com"><i class="fas fa-envelope"></i></a>
-            </div><br><br>
-            <div class="download-button-container">
-              <a class="download-button" href="imagenes/Francisco_2023.pdf" download>
-                  <i class="fas fa-download"></i> Descargar CV</a>
-          </div>          
+<!-- Sección home -->
+<section id="home-section" class="hero">
+  <div class="container">
+    <div class="left-section">
+      <span class="subheading">DESARROLLADOR WEB</span>
+      <h1 class="mb-4 mt-3">Fran Ortega</h1>
+      <h2 class="mb-4">Front-End <br> Diseño de páginas web.</h2>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/franort" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/FranSlannn" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/fran.o.tech" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:slannn@hotmail.com"><i class="fas fa-envelope"></i></a>
       </div>
-      <div class="right-section">
-          <img src="imagenes/PERFIL.jpg" alt="Mi Foto de Perfil">
-      </div>
+      <br><br>
+      <div class="download-button-container">
+        <a class="download-button" href="imagenes/Francisco_2023.pdf" download>
+          <i class="fas fa-download"></i> Descargar CV
+        </a>
+      </div>          
+    </div>
+    <div class="right-section">
+      <img src="imagenes/PERFIL.jpg" alt="Mi Foto de Perfil">
+    </div>
   </div>
-  </section>
-  
-  
+</section>
 
-<!------ABOUT US SECTION---------------------------->
-
+<!-- Sección "Sobre Mí" -->
 <section id="about-section" class="about">
   <div class="container">
     <div class="title-container">
@@ -90,36 +85,31 @@
   </div>
 </section>
 
-
-
-<!-- skills ----------------------------------------->
+<!-- Sección "Habilidades" -->
 <section id="skill" class="skill">
-<div class="skill">
-  <h2 class="heading">Habilidades</h2>
-  <div class="skills-container">
+  <div class="container">
+    <h2 class="heading">Habilidades</h2>
+    <div class="skills-container">
       <div class="skill-card">
-          <img src="imagenes/html.png" class="skill-img" alt="">
-          <div class="skill-level">98%</div>
-          <h1 class="skill-name">HTML</h1>
-          <p class="skill-info">HTML es como el esqueleto de una página web. Lo uso para estructurar y organizar
-             el contenido, desde encabezados hasta imágenes y enlaces. Es la base sobre la que construyo sitios web.</p>
+        <img src="imagenes/html.png" class="skill-img" alt="">
+        <div class="skill-level">98%</div>
+        <h1 class="skill-name">HTML</h1>
+        <p class="skill-info">HTML es como el esqueleto de una página web. Lo uso para estructurar y organizar el contenido, desde encabezados hasta imágenes y enlaces. Es la base sobre la que construyo sitios web.</p>
       </div>
       <div class="skill-card">
         <img src="imagenes/css.png" class="skill-img" alt="">
         <div class="skill-level">78%</div>
         <h1 class="skill-name">CSS</h1>
-        <p class="skill-info">Con CSS, añado estilo y belleza a mis páginas. Puedo dar color, tamaño y espaciado a los elementos,
-           asegurando que todo luzca atractivo y coherente. Es como la capa de pintura y decoración.</p>
+        <p class="skill-info">Con CSS, añado estilo y belleza a mis páginas. Puedo dar color, tamaño y espaciado a los elementos, asegurando que todo luzca atractivo y coherente. Es como la capa de pintura y decoración.</p>
       </div>
       <div class="skill-card">
         <img src="imagenes/js.png" class="skill-img" alt="">
         <div class="skill-level">58%</div>
         <h1 class="skill-name">JS</h1>
-        <p class="skill-info">JavaScript le da vida a mis páginas web. Utilizo JavaScript para crear efectos interactivos, validar formularios y
-           cargar contenido dinámico sin necesidad de recargar la página.</p>
+        <p class="skill-info">JavaScript le da vida a mis páginas web. Utilizo JavaScript para crear efectos interactivos, validar formularios y cargar contenido dinámico sin necesidad de recargar la página.</p>
       </div>
+    </div>
   </div>
-</div>
 </section>
 
 <!-- Sección "Proyectos" -->
@@ -132,89 +122,94 @@
       <button class="btn" data-category="ilustracion">Ilustraciones</button>
     </div><br>
     <div class="row" id="projectList">
-          <!-- Sección Webs -->
-          <div class="col custom-column mt-4">
-              <div class="project-item web" onclick="zoomImage('imagenes/friki.png')">
-                  <img src="imagenes/friki.png" alt="Proyecto 1">
-                  <h3>Proyecto 1</h3>
-              </div>
-          </div>
-
-          <!-- Sección Webs -->
-          <div class="col custom-column mt-4">
-              <div class="project-item web" onclick="zoomImage('imagenes/insectos.png')">
-                  <img src="imagenes/insectos.png" alt="Proyecto 2">
-                  <h3>Proyecto 2</h3>
-              </div>
-          </div>
-
-          <!-- Sección Webs -->
-          <div class="col custom-column mt-4">
-              <div class="project-item web" onclick="zoomImage('imagenes/sorrymom.jpg')">
-                  <img src="imagenes/sorrymom.jpg" alt="Proyecto 3">
-                  <h3>Proyecto 3</h3>
-              </div>
-          </div>
-
-          <!-- Sección Ilustraciones -->
-          <div class="col custom-column mt-4">
-              <div class="project-item ilustracion" onclick="zoomImage('imagenes/carabn.jpg')">
-                  <img src="imagenes/carabn.jpg" alt="Ilustración 1">
-                  <h3>Ilustración 1</h3>
-              </div>
-          </div>
-
-          <!-- Sección Ilustraciones -->
-          <div class="col custom-column mt-4">
-              <div class="project-item ilustracion" onclick="zoomImage('imagenes/ojo cocodrilo.jpg')">
-                  <img src="imagenes/ojo cocodrilo.jpg" alt="Ilustración 2">
-                  <h3>Ilustración 2</h3>
-              </div>
-          </div>
-
-          <!-- Sección Ilustraciones -->
-          <div class="col custom-column mt-4">
-              <div class="project-item ilustracion" onclick="zoomImage('imagenes/face2.jpg')">
-                  <img src="imagenes/face2.jpg" alt="Ilustración 3">
-                  <h3>Ilustración 3</h3>
-              </div>
-          </div>
+      <!-- Sección Webs -->
+      <div class="col custom-column mt-4">
+        <div class="project-item web" onclick="zoomImage('imagenes/friki.png')">
+          <img src="imagenes/friki.png" alt="Proyecto 1">
+          <h3>Proyecto 1</h3>
+        </div>
       </div>
+      <!-- Sección Webs -->
+      <div class="col custom-column mt-4">
+        <div class="project-item web" onclick="zoomImage('imagenes/insectos.png')">
+          <img src="imagenes/insectos.png" alt="Proyecto 2">
+          <h3>Proyecto 2</h3>
+        </div>
+      </div>
+      <!-- Sección Webs -->
+      <div class="col custom-column mt-4">
+        <div class="project-item web" onclick="zoomImage('imagenes/sorrymom.jpg')">
+          <img src="imagenes/sorrymom.jpg" alt="Proyecto 3">
+          <h3>Proyecto 3</h3>
+        </div>
+      </div>
+      <!-- Sección Ilustraciones -->
+      <div class="col custom-column mt-4">
+        <div class="project-item ilustracion" onclick="zoomImage('imagenes/carabn.jpg')">
+          <img src="imagenes/carabn.jpg" alt="Ilustración 1">
+          <h3>Ilustración 1</h3>
+        </div>
+      </div>
+      <!-- Sección Ilustraciones -->
+      <div class="col custom-column mt-4">
+        <div class="project-item ilustracion" onclick="zoomImage('imagenes/ojo cocodrilo.jpg')">
+          <img src="imagenes/ojo cocodrilo.jpg" alt="Ilustración 2">
+          <h3>Ilustración 2</h3>
+        </div>
+      </div>
+      <!-- Sección Ilustraciones -->
+      <div class="col custom-column mt-4">
+        <div class="project-item ilustracion" onclick="zoomImage('imagenes/face2.jpg')">
+          <img src="imagenes/face2.jpg" alt="Ilustración 3">
+          <h3>Ilustración 3</h3>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-
-  <!-- Sección "Contacto" -->
-  <section id="contact" class="contact">
-    <h2 class="section-title text-center">Contacto</h2>
-          <div class="social-icons-contact">
-              <a href="https://www.linkedin.com/in/franort" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a href="https://github.com/FranSlannn" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="https://www.instagram.com/fran.o.tech" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="mailto:slannn@hotmail.com"><i class="fas fa-envelope"></i></a>
-          </div>
-          <br>
-          <div class="download-button-container">
-            <a class="download-button" href="imagenes/Francisco_2023.pdf" download>
-                <i class="fas fa-download"></i> Descargar CV</a>
-        </div>      
-  </section>
-  
-
-  <!-- Pie de página -->
-  <footer class="footer-container">
-    <div class="container">
-      <p>&copy; 2023 Fran Ortega González. Todos los derechos reservados.</p>
+<!-- Sección "Contacto" -->
+<section id="contact" class="contact">
+  <h2 class="section-title text-center">Contacto</h2>
+  <div class="social-icons-contact">
+    <div class="contact-item">
+      <a href="https://www.linkedin.com/in/franort" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <p>LinkedIn</p>
     </div>
-  </footer>
+    <div class="contact-item">
+      <a href="https://github.com/FranSlannn" target="_blank"><i class="fab fa-github"></i></a>
+      <p>GitHub</p>
+    </div>
+    <div class="contact-item">
+      <a href="https://www.instagram.com/fran.o.tech" target="_blank"><i class="fab fa-instagram"></i></a>
+      <p>Instagram</p>
+    </div>
+    <div class="contact-item">
+      <a href="mailto:slannn@hotmail.com"><i class="fas fa-envelope"></i></a>
+      <p>Email</p>
+    </div>
+  </div>
+  <br>
+  <div class="download-button-container">
+    <a class="download-button" href="imagenes/Francisco_2023.pdf" download>
+      <i class="fas fa-download"></i> Descargar CV
+    </a>
+  </div>      
+</section>
 
- 
-  <!-- Scripts de Bootstrap y otros -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- Jquery needed -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
- 
+<!-- Pie de página -->
+<footer class="footer-container">
+  <div class="container">
+    <p>&copy; 2023 Fran Ortega González. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- Scripts de Bootstrap y otros -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Jquery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 </body>
 </html>
