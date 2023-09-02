@@ -44,7 +44,17 @@
           <span class="subheading">DESARROLLADOR WEB</span>
           <h1 class="mb-4 mt-3">Fran Ortega</h1>
           <h2 class="mb-4">Front-End <br>
-            Diseño de páginas web.</h2>
+            Diseño de páginas web.</h2><br>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/franort" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/FranSlannn" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.instagram.com/fran.o.tech" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="mailto:slannn@hotmail.com"><i class="fas fa-envelope"></i></a>
+            </div><br><br>
+            <div class="download-button-container">
+              <a class="download-button" href="imagenes/Francisco_2023.pdf" download>
+                  <i class="fas fa-download"></i> Descargar CV</a>
+          </div>          
       </div>
       <div class="right-section">
           <img src="imagenes/PERFIL.jpg" alt="Mi Foto de Perfil">
@@ -58,29 +68,34 @@
 
 <section id="about-section" class="about">
   <div class="container">
-    <div class="right-section">
-      <img src="imagenes/lenguaje.jpg" alt="Mi Foto de Perfil">
+    <div class="title-container">
+      <h2>Sobre mí</h2>
     </div>
-    <div class="left-section">
-         
-      <p class="mb-4">
-        ¡Hola! Soy Fran, un apasionado administrador de sistemas que siempre está buscando aprender y crecer en el mundo tecnológico. Mi experiencia en gestionar sistemas y redes me ha brindado una base sólida en la infraestructura tecnológica.
-      </p><br>
-      <p class="mb-4">
-        Además, estoy inmerso en el emocionante viaje de aprender desarrollo web y WordPress. Explorar el lado creativo de la tecnología me ha llevado a descubrir cómo las líneas de código pueden convertirse en experiencias digitales cautivadoras.
-      </p><br>
-      <p>
-        Siempre comprometido con la mejora continua, me encanta enfrentar nuevos desafíos y descubrir soluciones innovadoras.
-      </p>
+    <div class="sections-container">
+      <div class="right-section">
+        <img src="imagenes/lenguaje.jpg" alt="Mi Foto de Perfil">
+      </div>
+      <div class="left-section">
+        <p class="mb-4">
+          ¡Hola! Soy Fran, un apasionado administrador de sistemas que siempre está buscando aprender y crecer en el mundo tecnológico. Mi experiencia en gestionar sistemas y redes me ha brindado una base sólida en la infraestructura tecnológica.
+        </p><br>
+        <p class="mb-4">
+          Además, estoy inmerso en el emocionante viaje de aprender desarrollo web y WordPress. Explorar el lado creativo de la tecnología me ha llevado a descubrir cómo las líneas de código pueden convertirse en experiencias digitales cautivadoras.
+        </p><br>
+        <p>
+          Siempre comprometido con la mejora continua, me encanta enfrentar nuevos desafíos y descubrir soluciones innovadoras.
+        </p>
+      </div>
     </div>
   </div>
 </section>
 
 
+
 <!-- skills ----------------------------------------->
 <section id="skill" class="skill">
 <div class="skill">
-  <h1 class="heading">Habilidades</h1>
+  <h2 class="heading">Habilidades</h2>
   <div class="skills-container">
       <div class="skill-card">
           <img src="imagenes/html.png" class="skill-img" alt="">
@@ -110,12 +125,12 @@
 <!-- Sección "Proyectos" -->
 <section id="projects" class="projects">
   <div class="containerProject">
-    <h2>Proyectos</h2>
+    <h2 class="section-projects">Proyectos</h2>
     <div id="myBtnContainer">
       <button class="btn active" data-category="all">Mostrar todo</button>
       <button class="btn" data-category="web">Webs</button>
       <button class="btn" data-category="ilustracion">Ilustraciones</button>
-    </div>
+    </div><br>
     <div class="row" id="projectList">
           <!-- Sección Webs -->
           <div class="col custom-column mt-4">
@@ -171,19 +186,20 @@
 
   <!-- Sección "Contacto" -->
   <section id="contact" class="contact">
-    <div class="container">
-      <h2 class="section-title text-center">Contacto</h2>
-        <ul>
-          <li><i class="fas fa-envelope"></i> E: slannn@hotmail.com</li>
-          <li><i class="fab fa-linkedin"></i> LinkedIn: <a class="custom-link" href="https://www.linkedin.com/in/franort" target="_blank">www.linkedin.com/in/franort</a>
-          <li><i class="fas fa-map-marker-alt"></i> Ubicación: Madrid, España</li>          
-          <li><i class="fas fa-language"></i> Idiomas: Inglés, Español</li>
-    </ul>      
-      <a class="download-button" href="imagenes/Francisco_2023.pdf" download>
-        <i class="fas fa-download"></i> Descargar CV
-      </a>
-    </div>    
+    <h2 class="section-title text-center">Contacto</h2>
+          <div class="social-icons-contact">
+              <a href="https://www.linkedin.com/in/franort" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/FranSlannn" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.instagram.com/fran.o.tech" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="mailto:slannn@hotmail.com"><i class="fas fa-envelope"></i></a>
+          </div>
+          <br>
+          <div class="download-button-container">
+            <a class="download-button" href="imagenes/Francisco_2023.pdf" download>
+                <i class="fas fa-download"></i> Descargar CV</a>
+        </div>      
   </section>
+  
 
   <!-- Pie de página -->
   <footer class="footer-container">
@@ -192,14 +208,7 @@
     </div>
   </footer>
 
-  <!-- Banner de cookies -->
-  <div class="cookie-banner" id="cookie-consent">
-    <p>Este sitio web utiliza cookies para ofrecerte la mejor experiencia. Al continuar utilizando el sitio, aceptas nuestro uso de cookies.</p>
-    <button id="accept-cookie" class="btn btn-primary">Aceptar</button>
-    <a href="politica-de-cookies.html" class="btn btn-dark more-info">Más Información</a>
-  </div>
-
-
+ 
   <!-- Scripts de Bootstrap y otros -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
@@ -207,6 +216,5 @@
   <!-- Jquery needed -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
  
-
 </body>
 </html>
